@@ -1,0 +1,65 @@
+/*
+    INF1403 - PROGRAMAÇÃO PARA A WEB
+    TRABALHO 1
+    LEANDRO GOIS ()
+    SÉRGIO GABRIEL (2220652)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.Cartas {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1em;
+}
+
+.Carta {
+    height: 90px;
+    width: 90px;
+    display: grid;
+    place-items: center;
+    background-color: #8F00FF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+Carta:hover {
+    transform: scale(1.03);
+}
+
+.Carta img {
+    width: 80%;
+    max-height: 90px;
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+.Carta.clicked {
+    background-color: orange;
+}
+
+.Carta.checked {
+    background-color: lightgreen;
+}
+
+.Carta.clicked img, .Carta.checked img {
+    opacity: 1;
+}
