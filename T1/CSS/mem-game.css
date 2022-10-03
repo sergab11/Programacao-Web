@@ -1,7 +1,7 @@
 /*
     INF1403 - PROGRAMAÇÃO PARA A WEB
     TRABALHO 1
-    LEANDRO GOIS ()
+    LEANDRO GOIS (1811601)
     SÉRGIO GABRIEL (2220652)
 */
 
@@ -9,6 +9,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.main-page{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.email{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8F00FF;
+}
+
+.email input{
+    background-color: white;
+    border: 2px solid #8F00FF;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+}
+
+.buttons button{
+    background-color: white;
+    border: 2px solid #8F00FF;
+    color: #8F00FF;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: #8F00FF;
+    color: white;
+}
+
+.emailInvalido{
+    color: red;
+    font-size: 1rem;
+}
+
+.text-about{
+    border: 2px solid #8F00FF;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    padding: 4px;
+    width: 600px;
+    color:#8F00FF;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.devs{
+    background-color: #8F00FF;
+    color: white;
+    font-size: 0.75rem;
 }
 
 .container {
@@ -22,6 +87,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 500;
+    color: #8F00FF;
 }
 
 .Cartas {
