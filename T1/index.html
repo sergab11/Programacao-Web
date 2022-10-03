@@ -1,144 +1,52 @@
 <!--
     INF1403 - PROGRAMAÇÃO PARA A WEB
     TRABALHO 1
-    LEANDRO GOIS ()
+    LEANDRO GOIS (1811601)
     SÉRGIO GABRIEL (2220652)
 -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web - Trabalho 1</title>
-    <script type="text/javascript" src="Javascript/mem-game.js"></script>
+    <script type="text/javascript" src="Javascript/index.js"></script>
     <link rel='stylesheet' href='CSS/mem-game.css' />
 </head>
+
 <body>
-    <div class="container">
-        <h2 class="heading">Jogo da Memória - versão Brasileirão</h2>
-        <div class="Cartas">
-            <div class="Carta" escudo="bahia">
-                <img id="id_bahia">
-            </div> 
-            <div class="Carta" escudo="bota">
-                <img id="id_bota">
-            </div> 
-            <div class="Carta" escudo="cap">
-                <img id="id_cap">
-            </div> 
-            <div class="Carta" escudo="ceara">
-                <img id="id_ceara">
-            </div> 
-            <div class="Carta" escudo="corint">
-                <img id="id_corint">
-            </div> 
-            <div class="Carta" escudo="cru">
-                <img id="id_cru">
-            </div> 
-            <div class="Carta" escudo="fla">
-                <img id="id_fla">
-            </div> 
-            <div class="Carta" escudo="flu">
-                <img id="id_flu">
-            </div> 
-            <div class="Carta" escudo="fort">
-                <img id="id_fort">
-            </div> 
-            <div class="Carta" escudo="galo">
-                <img id="id_galo">
-            </div> 
-            <div class="Carta" escudo="goias">
-                <img id="id_goias">
-            </div> 
-            <div class="Carta" escudo="gremio">
-                <img id="id_gremio">
-            </div> 
-            <div class="Carta" escudo="inter">
-                <img id="id_inter">
-            </div> 
-            <div class="Carta" escudo="naut">
-                <img id="id_naut">
-            </div> 
-            <div class="Carta" escudo="palm">
-                <img id="id_palm">
-            </div> 
-            <div class="Carta" escudo="santos">
-                <img id="id_santos">
-            </div> 
-            <div class="Carta" escudo="saop">
-                <img id="id_saop">
-            </div> 
-            <div class="Carta" escudo="sport">
-                <img id="id_sport">
-            </div> 
-            <div class="Carta" escudo="vasco">
-                <img id="id_vasco">
-            </div> 
-            <div class="Carta" escudo="vito">
-                <img id="id_vito">
-            </div> 
-            <div class="Carta" escudo="bahia">
-                <img id="id_bahia1">
-            </div> 
-            <div class="Carta" escudo="bota">
-                <img id="id_bota1">
-            </div> 
-            <div class="Carta" escudo="cap">
-                <img id="id_cap1">
-            </div> 
-            <div class="Carta" escudo="ceara">
-                <img id="id_ceara1">
-            </div> 
-            <div class="Carta" escudo="corint">
-                <img id="id_corint1">
-            </div> 
-            <div class="Carta" escudo="cru">
-                <img id="id_cru1">
-            </div> 
-            <div class="Carta" escudo="fla">
-                <img id="id_fla1">
-            </div> 
-            <div class="Carta" escudo="flu">
-                <img id="id_flu1">
-            </div> 
-            <div class="Carta" escudo="fort">
-                <img id="id_fort1">
-            </div> 
-            <div class="Carta" escudo="galo">
-                <img id="id_galo1">
-            </div> 
-            <div class="Carta" escudo="goias">
-                <img id="id_goias1">
-            </div> 
-            <div class="Carta" escudo="gremio">
-                <img id="id_gremio1">
-            </div> 
-            <div class="Carta" escudo="inter">
-                <img id="id_inter1">
-            </div> 
-            <div class="Carta" escudo="naut">
-                <img id="id_naut1">
-            </div> 
-            <div class="Carta" escudo="palm">
-                <img id="id_palm1">
-            </div> 
-            <div class="Carta" escudo="santos">
-                <img id="id_santos1">
-            </div> 
-            <div class="Carta" escudo="saop">
-                <img id="id_saop1">
-            </div> 
-            <div class="Carta" escudo="sport">
-                <img id="id_sport1">
-            </div> 
-            <div class="Carta" escudo="vasco">
-                <img id="id_vasco1">
-            </div> 
-            <div class="Carta" escudo="vito">
-                <img id="id_vito1">
+    <div class="main-page">
+        <h2 class="heading">Jogo da Memória - Menu Principal</h2>
+        <div class="new game">
+            <div class="email">
+                <br><p>Digite um email válido:</p>
+                <input type="text" id="text_email" size="35" maxlength="35" /><br>
             </div>
+            <div class="buttons">
+                <button id="btNovoJogo">Novo Jogo</button>
+            </div>
+            <div class="emailInvalido" id="emailInv">
+                <p><b>Email inválido!</b></p>
+            </div>
+        </div>
+
+        <div class="about" id="divSobre">
+            <div class="buttons">
+                <button id="btSobre">Sobre</button>
+            </div>
+            <div class="text-about" id="divSobreTexto">
+                <p><b>Jogo da Memória versão Escudos de Futebol</b> é a versão digital de um dos jogos mais famosos da história. Nele, 20 cartas, que correspondem aos 20 escudos dos maiores clubes do futebol nacional, são posicionadas com a parte do desenho voltada para baixo. <b>Em cada jogada, o jogador deve escolher duas cartas e desvirá-las. Se elas formarem um par, elas são removidas do jogo. Caso contrário, elas são viradas novamente.</b> Este processo deve ser repetido até que todas as cartas sejam removidas.</p>
+                <p>A ideia do jogo é virar as cartas e ir memorizando os desenhos e o posicionamento delas. Assim, quando virar uma carta, você tem que puxar da memória para lembrar se já o par dela no jogo e, assim, tentar achá-lo.</p>
+                <p>Para completar o jogo, o jogador escolherá duas cartas com o mouse para que sejam desviradas. Se formarem um par, elas são removidas do jogo. Caso contrário, elas são viradas novamente. <b>Para vencer a partida, é necessário encontrar todos os pares para remover todas as cartas do jogo.</b></p>
+            </div>
+            <div class="devs" id="divSobreDevs">
+                <p><b>--- DESENVOLVIDO POR LEANDRO GOIS E SÉRGIO GABRIEL ---</b></p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
