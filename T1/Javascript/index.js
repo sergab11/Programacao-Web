@@ -23,7 +23,7 @@ onload = function(){
 
 function trataEmailEBotaoNovoJogo(){
     var EmailInForm = document.getElementById("text_email").value;
-    var reg = /^([a-z0-9_\-\.])+\@(gmail|hotmail|live)+\.com$/;
+    var reg = /^\\+([bcdfghjklmnpqrstvxwz])+(\[+[lg|sg|ls|sl]+\])$/;
 
     if (reg.test(EmailInForm)) {
         escondeDivEmailInvalido();
