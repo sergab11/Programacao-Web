@@ -7,27 +7,31 @@
 
 // mem-game.js possui todas as regras do jogo e o processamento das interações com o usuário
 
-vetorPathImagens = ["Imagens/bahia",
-    "Imagens/bota",
-    "Imagens/cap",
-    "Imagens/ceara",
-    "Imagens/corint",
-    "Imagens/cru",
-    "Imagens/fla",
-    "Imagens/flu",
-    "Imagens/fort",
-    "Imagens/galo",
-    "Imagens/goias",
-    "Imagens/gremio",
-    "Imagens/inter",
-    "Imagens/naut",
-    "Imagens/palm",
-    "Imagens/santos",
-    "Imagens/saop",
-    "Imagens/sport",
-    "Imagens/vasco",
-    "Imagens/vito",
+//let serieEscolhida = "A";
+let serieEscolhida = window.location.href.substring(window.location.href.indexOf('#')+1);
+
+vetorPathImagens = ["Imagens/Serie"+serieEscolhida+"/time1",
+    "Imagens/Serie"+serieEscolhida+"/time2",
+    "Imagens/Serie"+serieEscolhida+"/time3",
+    "Imagens/Serie"+serieEscolhida+"/time4",
+    "Imagens/Serie"+serieEscolhida+"/time5",
+    "Imagens/Serie"+serieEscolhida+"/time6",
+    "Imagens/Serie"+serieEscolhida+"/time7",
+    "Imagens/Serie"+serieEscolhida+"/time8",
+    "Imagens/Serie"+serieEscolhida+"/time9",
+    "Imagens/Serie"+serieEscolhida+"/time10",
+    "Imagens/Serie"+serieEscolhida+"/time11",
+    "Imagens/Serie"+serieEscolhida+"/time12",
+    "Imagens/Serie"+serieEscolhida+"/time13",
+    "Imagens/Serie"+serieEscolhida+"/time14",
+    "Imagens/Serie"+serieEscolhida+"/time15",
+    "Imagens/Serie"+serieEscolhida+"/time16",
+    "Imagens/Serie"+serieEscolhida+"/time17",
+    "Imagens/Serie"+serieEscolhida+"/time18",
+    "Imagens/Serie"+serieEscolhida+"/time19",
+    "Imagens/Serie"+serieEscolhida+"/time20",
 ];
+
 let numberOfTeams = 40;
 let checker = 0;
 let contaCartasIguais = 0;
@@ -114,10 +118,9 @@ function trataCartas() {
                     //se o jogador encontrar todos os pares de cartas, ele aguarda 2,5 segundos e é direcionado à página de fim de jogo
                     if(contaCartasIguais == 20){
                         sleep(2500).then(() => {
-                            window.open("return-page.html","_self");
-                        });    
-                        //sleep(2000);
-                        //window.open("return-page.html","_self");
+                            //window.open("return-page.html","_self");
+                            window.location.href = "return-page.html#"+serieEscolhida;
+                        });
                     }
                 } else {
                     const incorrectcartas = document.querySelectorAll(".Carta.clicked");
