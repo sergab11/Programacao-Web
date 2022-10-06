@@ -11,7 +11,7 @@ Relatório da aplicação "JOGO DA MEMÓRIA - BRASILEIRÃO"
 
 A - Como se inicializa a aplicação:
 
-  1 - Executar o arquivo index.HTML, onde apresentará o Menu Principal;
+  1 - Executar o arquivo index.HTML, onde apresentará o Menu Principal;<br>
   2 - No formulário "Digite um email válido", o usuário deve apresentar um e-mail válido no formato “\usuário[domínio|domínio|...|domínio]”. Para validação dos dados o     usuário deve seguir os seguintes critérios:
     2.1 - O caractere "\" deve ser inserido antes e junto ao nome de usuário do e-mail;
     2.2 - O texto deve ser composto apenas por consoantes;
