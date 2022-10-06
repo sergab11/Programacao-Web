@@ -9,7 +9,7 @@ Sérgio Gabriel (2220652)
 
 Relatório da aplicação "JOGO DA MEMÓRIA - BRASILEIRÃO"
 
-A - Como se inicializa a aplicação:<br>
+A - Como se inicializa a aplicação:
 
   1 - Executar o arquivo index.HTML, onde apresentará o Menu Principal;
   2 - No formulário "Digite um email válido", o usuário deve apresentar um e-mail válido no formato “\usuário[domínio|domínio|...|domínio]”. Para validação dos dados o     usuário deve seguir os seguintes critérios:
