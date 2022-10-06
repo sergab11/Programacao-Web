@@ -24,7 +24,7 @@ A - Como se inicializa a aplicação:
 
 B - Como funciona o jogo:
 
-Jogo da Memória - Escudos do Brasileirão é a versão digital de um dos jogos mais famosos da história. Nele, 20 cartas, que correspondem aos 20 escudos dos maiores clubes do futebol nacional, são posicionadas com a parte do desenho voltada para baixo. Em cada jogada, o jogador deve escolher duas cartas e desvirá-las. Se elas formarem um par, elas são removidas do jogo. Caso contrário, elas são viradas novamente. Este processo deve ser repetido até que todas as cartas sejam removidas.
+Jogo da Memória - Escudos do Brasileirão é a versão digital de um dos jogos mais famosos da história. Nele, 20 cartas, que correspondem aos 20 escudos da divisão A ou B do futebol nacional, são posicionadas com a parte do desenho voltada para baixo. Em cada jogada, o jogador deve escolher duas cartas e desvirá-las. Se elas formarem um par, elas são removidas do jogo. Caso contrário, elas são viradas novamente. Este processo deve ser repetido até que todas as cartas sejam removidas.
 
 A ideia do jogo é virar as cartas e ir memorizando os desenhos e o posicionamento delas. Assim, quando virar uma carta, você tem que puxar da memória para lembrar se já o par dela no jogo e, assim, tentar achá-lo.
 
