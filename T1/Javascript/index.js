@@ -6,7 +6,7 @@
 */
 
 // página index.html trata, obviamente, do menu principal do jogo
-// jogador, após preencher o campo com seu email e o mesmo ser validado, poderá começar a jogar (botaoNovoJogo)
+// jogador, após preencher o campo com seu email, selecionar a Série de Times e o email ser validado, poderá começar a jogar (botaoNovoJogo)
 // jogador também poderá ler informações (botaoSobre) sobre o jogo
 
 mostraSobre = true;
@@ -23,11 +23,13 @@ onload = function(){
 
 function trataEmailEBotaoNovoJogo(){
     var EmailInForm = document.getElementById("text_email").value;
-    var reg = /^\\+([bcdfghjklmnpqrstvxwz])+(\[+[lg|sg|ls|sl]+\])$/;
+    var reg = /\\[b-df-hj-np-tv-z]+\[[b-df-hj-np-tv-z]+(\|[b-df-hj-np-tv-z]+)+\]/i;
 
     if (reg.test(EmailInForm)) {
         escondeDivEmailInvalido();
-        window.open("mem-game.html","_self");
+        var obj_select = document.getElementById("idSelect");
+        var serieSelecionada = obj_select.options[obj_select.selectedIndex].value;
+        window.location.href = "mem-game.html#"+serieSelecionada;
     } else {
         mostraDivEmailInvalido();
     }
