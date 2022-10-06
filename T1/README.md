@@ -13,7 +13,7 @@ A - Como se inicializa a aplicação:
 
   1 - Executar o arquivo index.HTML, onde apresentará o Menu Principal;<br>
   2 - No formulário "Digite um email válido", o usuário deve apresentar um e-mail válido no formato “\usuário[domínio|domínio|...|domínio]”. Para validação dos dados o     usuário deve seguir os seguintes critérios:<br>
-    2.1 - O caractere "\" deve ser inserido antes e junto ao nome de usuário do e-mail;<br>
+    2.1 - O caractere "\\" deve ser inserido antes e junto ao nome de usuário do e-mail;<br>
     2.2 - O texto deve ser composto apenas por consoantes;<br>
     2.3 - É obrigatório a utilização de, ao menos, dois domínios no e-mail;<br>
     2.4 - Os domínios devem ser declarados entre os caracteres "[" e "]";<br>
