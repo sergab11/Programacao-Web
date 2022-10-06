@@ -13,12 +13,12 @@ A - Como se inicializa a aplicação:
 
   1 - Executar o arquivo index.HTML, onde apresentará o Menu Principal;<br>
   2 - No formulário "Digite um email válido", o usuário deve apresentar um e-mail válido no formato “\usuário[domínio|domínio|...|domínio]”. Para validação dos dados o     usuário deve seguir os seguintes critérios:<br>
-    2.1 - O caractere "\\" deve ser inserido antes e junto ao nome de usuário do e-mail;<br>
-    2.2 - O texto deve ser composto apenas por consoantes;<br>
-    2.3 - É obrigatório a utilização de, ao menos, dois domínios no e-mail;<br>
-    2.4 - Os domínios devem ser declarados entre os caracteres "[" e "]";<br>
-    2.5 - Os domínios devem ser separados pelo caractere "|";<br>
-    2.6 - Não há limite de tamanho para nome e/ou quantidade de domínios.<br>
+    &ensp; 2.1 - O caractere "\\" deve ser inserido antes e junto ao nome de usuário do e-mail;<br>
+    &ensp; 2.2 - O texto deve ser composto apenas por consoantes;<br>
+    &ensp; 2.3 - É obrigatório a utilização de, ao menos, dois domínios no e-mail;<br>
+    &ensp; 2.4 - Os domínios devem ser declarados entre os caracteres "[" e "]";<br>
+    &ensp; 2.5 - Os domínios devem ser separados pelo caractere "|";<br>
+    &ensp; 2.6 - Não há limite de tamanho para nome e/ou quantidade de domínios.<br>
   3 - O usuário deve selecionar na caixa de seleção "Selecione a divisão desejada do brasileirao" entre Série A ou B;<br>
   4 - Clicar no botão "Novo Jogo".<br>
 
