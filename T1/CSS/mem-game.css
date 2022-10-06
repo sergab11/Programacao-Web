@@ -24,6 +24,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: #8F00FF;
+    padding-bottom: 35px;
 }
 
 .email input{
@@ -40,6 +41,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     color: #8F00FF;
+    padding-bottom: 35px;
 }
 
 #idSelect{
@@ -54,7 +56,8 @@
     background-color: white;
     border: 2px solid #8F00FF;
     color: #8F00FF;
-    padding: 14px 40px;
+    padding: 14px 0px;
+    width: 130px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -90,6 +93,7 @@
     background-color: #8F00FF;
     color: white;
     font-size: 0.75rem;
+    text-transform: uppercase;
 }
 
 .container {
@@ -104,6 +108,12 @@
     font-size: 2rem;
     font-weight: 500;
     color: #8F00FF;
+    text-transform: uppercase;
+}
+
+#menu {
+    padding-top: 35px;
+    text-transform: none;
 }
 
 .Cartas {
