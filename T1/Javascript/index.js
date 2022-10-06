@@ -11,56 +11,55 @@
 
 mostraSobre = true;
 
-onload = function(){
+onload = function() {
     trocaEstadoSobre();
     escondeDivEmailInvalido();
     var botaoSobre = this.document.getElementById("btSobre");
-    var botaoNovoJogo = this.document.getElementById("btNovoJogo"); 
+    var botaoNovoJogo = this.document.getElementById("btNovoJogo");
 
     botaoSobre.addEventListener("click", trataBotaoSobre);
     botaoNovoJogo.addEventListener("click", trataEmailEBotaoNovoJogo);
 }
 
-function trataEmailEBotaoNovoJogo(){
+function trataEmailEBotaoNovoJogo() {
     var EmailInForm = document.getElementById("text_email").value;
-    var reg = /\\[b-df-hj-np-tv-z]+\[[b-df-hj-np-tv-z]+(\|[b-df-hj-np-tv-z]+)+\]/i;
+    var reg = /^([\\]{1})[b-df-hj-np-tv-z]+\[[b-df-hj-np-tv-z]+(\|[b-df-hj-np-tv-z]+)+\]/i;
 
     if (reg.test(EmailInForm)) {
         escondeDivEmailInvalido();
         var obj_select = document.getElementById("idSelect");
         var serieSelecionada = obj_select.options[obj_select.selectedIndex].value;
-        window.location.href = "mem-game.html#"+serieSelecionada;
+        window.location.href = "mem-game.html#" + serieSelecionada;
     } else {
         mostraDivEmailInvalido();
     }
 }
 
-function trataBotaoSobre(){
+function trataBotaoSobre() {
     trocaEstadoSobre();
 }
 
-function trocaEstadoSobre(){
+function trocaEstadoSobre() {
     var divSobreTexto = this.document.getElementById("divSobreTexto");
     var divSobreDevs = this.document.getElementById("divSobreDevs");
 
-    if(mostraSobre === false){
+    if (mostraSobre === false) {
         mostraSobre = true;
-        divSobreTexto.style.visibility = 'visible'; 
-        divSobreDevs.style.visibility = 'visible'; 
-    }
-    else{
+        divSobreTexto.style.visibility = 'visible';
+        divSobreDevs.style.visibility = 'visible';
+    } else {
         mostraSobre = false;
-        divSobreTexto.style.visibility = 'hidden'; 
-        divSobreDevs.style.visibility = 'hidden'; 
+        divSobreTexto.style.visibility = 'hidden';
+        divSobreDevs.style.visibility = 'hidden';
     }
 }
 
-function escondeDivEmailInvalido(){
+function escondeDivEmailInvalido() {
     var divEmailInvalido = this.document.getElementById("emailInv");
     divEmailInvalido.style.visibility = 'hidden';
 }
 
-function mostraDivEmailInvalido(){
+function mostraDivEmailInvalido() {
     var divEmailInvalido = this.document.getElementById("emailInv");
-    divEmailInvalido.style.visibility = 'visible'; 
+    divEmailInvalido.style.visibility = 'visible';
 }
