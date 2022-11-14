@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cria Contato</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    {% include 'trabalho2/links.html' %}
+    <h1>Cria um contato</h1>
+    <form action="" method="POST">
+        <fieldset style="width: max-content;">
+            <legend>Formulário de Cadastro</legend>
+            {% csrf_token %}
+            <table class='formulario'>
+                {{ formulario.as_table }}
+            </table>
+            <button type="submit">Cria contato</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!--
+Para incluir esse fragmento de página HTML em uma página HTML use: { % include 'trabalho2/links.html' % }
+-->
+
+<body>
+    <a href="{% url 'sec-home' %}">
+    Página inicial de controle de acesso
+    </a> |
+    <a href="{% url 'homepage' %}">
+    Página inicial
+    </a> |
+    <a href="{% url 'segunda' %}">
+    Segunda página
+    </a> |
+    <a href="{% url 'lista-contatos' %}">
+    Lista de contatos
+    </a> |
+    <a href="{% url 'cria-contato' %}">
+    Inserir contato
+    </a> |
+    <a href="{% url 'sec-paginaSecreta' %}">
+    Só autenticados
+    </a>
+    <hr>
+</body>
+
+</html>
